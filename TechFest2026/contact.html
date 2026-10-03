@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechFest 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🚀 TechFest</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Contact Us</h1>
+            <p>Have questions? We're here to help! Reach out to the TechFest team</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info-box">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you. Here are multiple ways you can reach us:</p>
+
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@techfest2026.com">info@techfest2026.com</a></p>
+                        <p><a href="mailto:support@techfest2026.com">support@techfest2026.com</a></p>
+                        <p class="response-time">Response time: Within 24 hours</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><a href="tel:+1234567891">+1 (234) 567-891</a></p>
+                        <p class="response-time">Mon-Fri: 9 AM - 6 PM</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Address</h3>
+                        <p>Central Convention Center</p>
+                        <p>123 Tech Avenue</p>
+                        <p>Innovation City, IC 12345</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 9 AM - 6 PM</p>
+                        <p>Saturday: 10 AM - 4 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-box">
+                <h2>Send us a Message</h2>
+                
+                <div class="success-message" id="contactSuccessMessage">
+                    ✓ Your message has been sent successfully! We'll get back to you soon.
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Your Name *</label>
+                            <input type="text" id="contactName" name="name" required placeholder="Your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="your.email@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone number (optional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="registration">Registration Help</option>
+                            <option value="event">Event Information</option>
+                            <option value="sponsorship">Sponsorship Opportunities</option>
+                            <option value="speaker">Speaking Opportunities</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organization">Organization/Company</label>
+                        <input type="text" id="organization" name="organization" placeholder="Your organization (optional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Please share your message or question here..."></textarea>
+                    </div>
+
+                    <div class="checkbox-group-full">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="copy" name="copy">
+                            <span>Send me a copy of this message</span>
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <span>Subscribe to our newsletter</span>
+                        </label>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="form-button">Send Message</button>
+                        <button type="reset" class="form-button-secondary">Clear</button>
+                    </div>
+
+                    <p class="form-note">* Required fields</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>❓ When is TechFest 2026?</h3>
+                    <p>TechFest 2026 will be held on March 15-17, 2026 at the Central Convention Center.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ How much is the registration fee?</h3>
+                    <p>Registration fees vary by category: Students: $50, Professionals: $150, Entrepreneurs: $200. Early bird discounts available!</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Can I get a refund?</h3>
+                    <p>Yes, refunds are available up to 2 weeks before the event. Please contact our support team for details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Is accommodation included?</h3>
+                    <p>Accommodation is not included in the registration fee but can be added during registration at a discounted rate.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Can I bring a guest?</h3>
+                    <p>Each registration is for one person. If your guest wants to attend, they'll need to register separately.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Will there be online attendance?</h3>
+                    <p>Yes! We offer hybrid attendance. Register for virtual access to live-stream all keynotes and selected sessions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ How do I become a sponsor?</h3>
+                    <p>Interested in sponsoring? Email us at sponsorship@techfest2026.com with your details and we'll send you sponsorship packages.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>❓ Can I speak at TechFest?</h3>
+                    <p>We welcome speaker proposals! Submit your topic to speakers@techfest2026.com. We'll review and get back to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechFest 2026</h3>
+                <p style="color: #cbd5e1;">Innovation Unleashed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="mailto:info@techfest2026.com">info@techfest2026.com</a>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <p style="color: #cbd5e1;">Venue: Central Convention Center</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="LinkedIn">in</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Facebook">f</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechFest. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
